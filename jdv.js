@@ -5,7 +5,7 @@ let canvas = document.getElementById('myCanvas');
 let context = canvas.getContext('2d');
 let tailleMax = document.getElementById('myCanvas').height;
 
-let denominateur = 100;
+let denominateur = 150;
 let cellSize = canvas.height/denominateur;      
 let NbrDeCasesVivantes = 7000;
 var monTabDeVivant;
@@ -304,7 +304,7 @@ function play(){
     }
     if (gameIterator === undefined){
         hasStarted = true;
-        gameIterator = setInterval(iterate, 100)
+        gameIterator = setInterval(iterate, 1)
     }
 }
 
